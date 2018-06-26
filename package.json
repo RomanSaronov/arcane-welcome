@@ -1,0 +1,7 @@
+{
+  "name": "app",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "https://github.com/rails/webpacker.git"
+  }
+}

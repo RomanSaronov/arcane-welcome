@@ -54,7 +54,3 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Adds support for Rubocop code style checking tool
 gem 'rubocop', '~> 0.57.2'
-
-# Add support for Bootstrap and Jquery
-gem 'bootstrap', '~> 4.0'
-gem 'jquery-rails', '~> 4.3', '>= 4.3.3'

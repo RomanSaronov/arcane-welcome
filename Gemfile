@@ -54,3 +54,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Adds support for Rubocop code style checking tool
 gem 'rubocop', '~> 0.57.2'
+
+# Adds Devise for auth
+gem 'devise'

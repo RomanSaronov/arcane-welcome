@@ -11,7 +11,8 @@
         </button>
       </div>
       <div class="modal-body">
-          <%= render 'devise/sessions/new' %>
+         <script>$("#loginModalLabel .modal-content").html('<%= j render "devise/sessions/new" %>');
+         $("#loginModalLabel").modal();</script>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -3,32 +3,27 @@
   <head>
   </head>
   <body>
-  <div class="container-fluid">
   <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="./">Stock</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item hidden">
-          <a class="nav-link" href="add">Add Stock</a>
-        </li>
-        <li class="nav-item right">
-          <a class="nav-link" data-toggle="modal" data-target="#loginModal">Login</a>
-        </li>
-        <li class="nav-item right">
-          <a class="nav-link" data-toggle="modal" data-target="#signUpModal">Sign up</a>
-        </li>
-        <li class="nav-item right">
-          <a class="nav-link" data-toggle="modal" data-target="#signOutModal">Logout</a>
-        </li>
-      </ul>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+      <h5 class="my-0 mr-md-auto font-weight-normal" href="./">Stock</h5>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <nav class="my-2 my-md-0 mr-md-3">
+          <a class="p-2 text-dark" href="add">Add Stock</a>
+        </nav>
+        <a class="btn btn-outline-primary" data-toggle="modal" data-target="#loginModal">Login</a>
+        <a class="btn btn-outline-primary" data-toggle="modal" data-target="#signUpModal">Sign up</a>
+        <a class="btn btn-outline-primary" data-toggle="modal" data-target="#signOutModal">Logout</a>
+      </div>
     </div>
-  </nav>
     <div class="container">
-      <h1>Stock productivity calculator</h1>
+      <div class="row">
+        <div class="col-12">
+          <h1>Stock productivity calculator</h1>
+        </div>
+      </div>
     </div>
 
     <!-- Login Modal -->
@@ -116,9 +111,6 @@
         </div>
       </div>
     </div>
-
-
-  </div>
   </body>
 </html>
 

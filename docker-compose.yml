@@ -16,7 +16,7 @@ services:
   db:
     image: postgres:10.3-alpine
     environment:
-      POSTGRES_PASSWORD: test
+      POSTGRES_PASSWORD: test2
       POSTGRES_USER: test
       POSTGRES_DB: test_db
 

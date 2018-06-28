@@ -5,7 +5,7 @@
     <a class="p-2 text-dark" href="add">+Add Stock</a>
   </nav>
   <% if user_signed_in? %>
-    <a href="<%= link_to 'Log out', destroy_user_session_path, method: :delete %>" class="btn btn-outline-primary ml-2"></a>
+    <li><%= link_to 'Log out', destroy_user_session_path, method: :delete %></li>
   <% else # user not signed it %>
     <a href="login" class="btn btn-outline-primary">Login</a>
     <a href="register" class="btn btn-outline-primary ml-2" >Sign up</a>

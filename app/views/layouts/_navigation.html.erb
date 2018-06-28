@@ -3,11 +3,11 @@
   <a class="my-0 mr-md-auto font-weight-normal" href="./">Stock</a>
   <% if user_signed_in? %>
     <nav class="my-2 my-md-0 mr-md-3">
-      <a class="p-2 text-dark" href="add">+Add Stock</a>
+      <a class="p-2 text-dark" href="add">Add Stock</a>
     </nav>
     <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
   <% else # user not signed it %>
     <a href="login" class="btn btn-outline-primary">Login</a>
-    <a href="register" class="btn btn-outline-primary ml-2" >Sign up</a>
+    <a href="register" class="btn btn-outline-primary ml-2">Sign up</a>
   <% end # if user is signed it %>
 </div>

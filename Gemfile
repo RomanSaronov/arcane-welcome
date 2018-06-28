@@ -57,3 +57,6 @@ gem 'rubocop', '~> 0.57.2'
 
 # Adds Devise for auth
 gem 'devise'
+
+# Ruby version
+ruby '2.5.1'

@@ -4,7 +4,10 @@
   <nav class="my-2 my-md-0 mr-md-3">
     <a class="p-2 text-dark" href="add">Add Stock</a>
   </nav>
-  <a href="login" class="btn btn-outline-primary">Login</a>
-  <a href="register" class="btn btn-outline-primary ml-2" >Sign up</a>
-  <a href="logout" class="btn btn-outline-primary ml-2">Logout</a>
+  <% if user_signed_in? %>
+    <a href="logout" class="btn btn-outline-primary ml-2">Logout</a>
+  <% else # user not signed it %>
+    <a href="login" class="btn btn-outline-primary">Login</a>
+    <a href="register" class="btn btn-outline-primary ml-2" >Sign up</a>
+  <% end # if user is signed it %>
 </div>

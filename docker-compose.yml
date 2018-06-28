@@ -15,3 +15,8 @@ services:
       DATABASE_URL: postgres://postgres@db
   db:
     image: postgres:10.3-alpine
+    environment:
+      POSTGRES_PASSWORD: test
+      POSTGRES_USER: test
+      POSTGRES_DB: test_db
+

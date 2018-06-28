@@ -11,8 +11,17 @@
         </button>
       </div>
       <div class="modal-body">
-         <script>$("#loginModalLabel .modal-content").html('<%= j render "devise/sessions/new" %>');
-         $("#loginModalLabel").modal();</script>
+        <form>
+          <div class="form-group">
+            <label for="inputEmail">Email address</label>
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+          </div>
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

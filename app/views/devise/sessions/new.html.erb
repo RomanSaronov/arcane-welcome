@@ -13,24 +13,24 @@
     <div class="col-6">
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="form-group">
-          <label><%= f.label :email %></label><br />
-          <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+          <label><%= f.label :email %></label>
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => 'form-control' %>
         </div>
 
         <div class="form-group">
-          <label><%= f.label :password %></label><br />
-          <%= f.password_field :password, autocomplete: "off" %>
+          <label><%= f.label :password %></label>
+          <%= f.password_field :password, autocomplete: "off", :class => 'form-control' %>
         </div>
 
         <% if devise_mapping.rememberable? -%>
           <div class="form-group">
-            <%= f.check_box :remember_me %>
+            <%= f.check_box :remember_me, :class => 'form-check-input' %>
             <label><%= f.label :remember_me %></label>
           </div>
         <% end -%>
 
-        <div class="actions">
-          <%= f.submit "Log in" %>
+        <div class="text-right">>
+          <%= f.submit "Log in", :class => 'btn btn-primary button-width' %>
         </div>
       <% end %>
 
@@ -41,3 +41,9 @@
 </div>
 </body>
 </html>
+
+<style>
+  .button-width {
+    width: 20%;
+  }
+</style>

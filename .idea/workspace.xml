@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2a4c4dac-986e-4da8-be89-464f81dae327" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/stock_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/stock_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/stock/add.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/stock/add.html.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -21,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="add.html.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="add.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/stock/add.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="456">
+              <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -60,13 +59,13 @@
       <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="37" column="8" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="37" selection-end-column="8" />
+            <state relative-caret-position="347">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="33" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="posts_controller.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="posts_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
@@ -168,8 +167,8 @@
         <option value="$PROJECT_DIR$/app/views/posts/_post.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20180629140053_create_posts.rb" />
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/stock/add.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/stock_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/stock/add.html.erb" />
       </list>
     </option>
   </component>
@@ -495,21 +494,7 @@
       <workItem from="1530044928321" duration="24957000" />
       <workItem from="1530174576288" duration="12478000" />
       <workItem from="1530191411275" duration="24513000" />
-      <workItem from="1530280109216" duration="7175000" />
-    </task>
-    <task id="LOCAL-00116" summary="Add stock form creation">
-      <created>1530261413274</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1530261413274</updated>
-    </task>
-    <task id="LOCAL-00117" summary="Login form styles">
-      <created>1530261796386</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1530261796387</updated>
+      <workItem from="1530280109216" duration="7622000" />
     </task>
     <task id="LOCAL-00118" summary="Login form styles">
       <created>1530261961055</created>
@@ -840,11 +825,25 @@
       <option name="project" value="LOCAL" />
       <updated>1530294230908</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="Posts implementation">
+      <created>1530294900658</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1530294900658</updated>
+    </task>
+    <task id="LOCAL-00166" summary="Posts implementation">
+      <created>1530295075913</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1530295075914</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69123000" />
+    <option name="totallyTimeSpent" value="69570000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1138,13 +1137,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="37" column="8" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="37" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/_post.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1173,17 +1165,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/stock/add.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="33" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/stock/add.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
         </state>
       </provider>
     </entry>

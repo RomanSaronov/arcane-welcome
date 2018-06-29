@@ -1,6 +1,6 @@
 class CreateStockController < ApplicationController
   def create
-    @stocks = CreateStocks.new(stock_params)
+    @createstocks = CreateStocks.new(stock_params)
 
     if @stocks.save
       flash[:notice] = "Stock was created."

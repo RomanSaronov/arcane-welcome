@@ -12,27 +12,26 @@
       <div class="row bg-light p-3">
         <div class="col-6">
           <!--  Form-->
-          <form>
+          <%= form_for @stocks do |f| %>
             <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Name">
-            </div>
-            <div class="form-group">
-              <label for="unitPrice">Unit Price</label>
-              <input type="text" class="form-control" id="unitPrice" placeholder="Unit Price">
+              <%= f.label :name %>
+              <%= f.text_field :name, class: 'form-group' %>
             </div>
             <div class="form-group">
-              <label for="interest">Interest</label>
-              <input type="text" class="form-control" id="interest" placeholder="Interest">
+              <%= f.label :price, 'Unit Price' %>
+              <%= f.text_field :price, class: 'form-group' %>
             </div>
             <div class="form-group">
-              <label for="duration">Duration</label>
-              <input type="text" class="form-control" id="duration" placeholder="Duration">
+              <%= f.label :interest, 'Unit Price' %>
+              <%= f.text_field :interest, class: 'form-group' %>
             </div>
-            <div class="text-right">
-              <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="form-group">
+              <%= f.label :duration, 'Unit Price' %>
+              <%= f.text_field :duration, class: 'form-group' %>
             </div>
-          </form>
+
+            <%= f.submit 'Create Account', class: 'btn btn-success %>
+          <% end %>
         </div>
         <div class="col-6"></div>
       </div>

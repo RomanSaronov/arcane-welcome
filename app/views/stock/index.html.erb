@@ -14,7 +14,7 @@
           <% if user_signed_in? %>
             <h5 class="mb-2 text-muted font-weight-light">Please add stock</h5>
             <a role="button" class="btn btn-primary" href="add">+ Add Stock</a>
-            <%= render 'posts/post' %>
+            <%= render @posts %>
           <% else # user not signed it %>
             <h5 class="mb-2 text-muted font-weight-light">Login or register for stock operations</h5>
           <% end # if user is signed it %>

@@ -15,22 +15,22 @@
           <%= form_for @stocks do |f| %>
 
             <div class="form-group">
-              <label><%= f.label :name %></label>
+              <%= f.label :name %>
               <%= f.text_field :name, autofocus: true, autocomplete: "off", :class => 'form-control' %>
             </div>
 
             <div class="form-group">
-              <label><%= f.label :price %></label>
+              <%= f.label :price %>
               <%= f.text_field :price, autocomplete: "off", :class => 'form-control' %>
             </div>
 
             <div class="form-group">
-              <label><%= f.label :interest %></label>
+              <%= f.label :interest %>
               <%= f.text_field :interest, autocomplete: "off", :class => 'form-control' %>
             </div>
 
           <div class="form-group">
-              <label><%= f.label :duration %></label>
+              <%= f.label :duration %>
               <%= f.text_field :durationt, autocomplete: "off", :class => 'form-control' %>
             </div>
 

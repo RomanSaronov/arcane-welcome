@@ -2,7 +2,7 @@ class CreateStockController < ApplicationController
   def create
     @createstocks = CreateStocks.new(stock_params)
 
-    if @stocks.save
+    if @reatestocks.save
       flash[:notice] = "Stock was created."
       redirect_to 'stock/index'
     else

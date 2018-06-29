@@ -41,8 +41,8 @@
       <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="10" lean-forward="true" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+            <state relative-caret-position="655">
+              <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -432,21 +432,7 @@
       <updated>1530044926769</updated>
       <workItem from="1530044928321" duration="24957000" />
       <workItem from="1530174576288" duration="12478000" />
-      <workItem from="1530191411275" duration="20818000" />
-    </task>
-    <task id="LOCAL-00081" summary="Rootes fix">
-      <created>1530202855323</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1530202855323</updated>
-    </task>
-    <task id="LOCAL-00082" summary="Login form styles">
-      <created>1530205186041</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1530205186041</updated>
+      <workItem from="1530191411275" duration="21089000" />
     </task>
     <task id="LOCAL-00083" summary="Login form styles">
       <created>1530205522941</created>
@@ -777,11 +763,25 @@
       <option name="project" value="LOCAL" />
       <updated>1530265268099</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="Login form styles">
+      <created>1530267152431</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1530267152432</updated>
+    </task>
+    <task id="LOCAL-00131" summary="Login form styles">
+      <created>1530267329724</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1530267329724</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58253000" />
+    <option name="totallyTimeSpent" value="58524000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1114,8 +1114,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="10" lean-forward="true" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+        <state relative-caret-position="655">
+          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
         </state>
       </provider>
     </entry>

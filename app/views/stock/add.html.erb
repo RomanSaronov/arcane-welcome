@@ -12,7 +12,7 @@
       <div class="row bg-light p-3">
           <div class="col-6">
 
-            <%= form_for @posts, url: {action: "create"} do |f| %>
+            <%= form_for :posts  do |f| %>
               <%= f.text_field :name %>
               <%= f.text_field :price %>
               <%= f.text_field :duration %>

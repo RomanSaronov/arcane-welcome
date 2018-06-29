@@ -16,29 +16,28 @@
 
             <div class="form-group">
               <label><%= f.label :name %></label>
-              <%= f.name_field :name, autofocus: true, autocomplete: "off", :class => 'form-control' %>
+              <%= f.text_field :name, autofocus: true, autocomplete: "off", :class => 'form-control' %>
             </div>
 
             <div class="form-group">
               <label><%= f.label :price %></label>
-              <%= f.price_field :price, autocomplete: "off", :class => 'form-control' %>
+              <%= f.text_field :price, autocomplete: "off", :class => 'form-control' %>
             </div>
 
             <div class="form-group">
               <label><%= f.label :interest %></label>
-              <%= f.interest_field :interest, autocomplete: "off", :class => 'form-control' %>
+              <%= f.text_field :interest, autocomplete: "off", :class => 'form-control' %>
             </div>
 
           <div class="form-group">
               <label><%= f.label :duration %></label>
-              <%= f.duration_field :durationt, autocomplete: "off", :class => 'form-control' %>
+              <%= f.text_field :durationt, autocomplete: "off", :class => 'form-control' %>
             </div>
 
             <div class="text-right">
               <%= f.submit "Add stock", :class => 'btn btn-primary button-width' %>
             </div>
           <% end %>
-
         </div>
         <div class="col-6"></div>
       </div>

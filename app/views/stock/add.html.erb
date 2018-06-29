@@ -11,10 +11,10 @@
       </div>
       <div class="row bg-light p-3">
         <div class="col-6">
-          <%= form_for @posts do |f| %>
-            <%= f.text_field :name %>
+          <%= form_for @posts, as: :stock do |f| %>
+            <%= f.text_field :name %><br>
             <%= f.text_field :price %><br>
-            <%= f.text_field :interest %>
+            <%= f.text_field :interest %><br>
             <%= f.text_field :duration %><br>
             <%= f.submit 'Add Stock' %>
           <% end %>

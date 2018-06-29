@@ -1,0 +1,2 @@
+module CreateStockHelper
+end

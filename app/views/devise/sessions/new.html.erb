@@ -24,7 +24,7 @@
 
         <% if devise_mapping.rememberable? -%>
           <div class="form-group">
-            <%= f.check_box :remember_me, :class => 'form-check-input' %>
+            <%= f.check_box :remember_me, :class => 'form-check-input custom-input' %>
             <label><%= f.label :remember_me %></label>
           </div>
         <% end -%>
@@ -43,5 +43,9 @@
 <style>
   .button-width {
     width: 20%;
+  }
+  .custom-input {
+    margin-left: 0;
+    margin-right: 10px;
   }
 </style>

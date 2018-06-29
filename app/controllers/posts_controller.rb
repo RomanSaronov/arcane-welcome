@@ -1,15 +1,12 @@
 class PostsController < ApplicationController
   def create
-    @posts = Post.new(params)
+    @posts = Post.new(post_params)
     if @posts.save
       redirect_to 'stock#index'
-    else
-      render :new
     end
   end
   private
-  def params
+  def post_params
     params.require(:posts).permit(:name, :price, :duration, :interest)
-  end
   end
 end

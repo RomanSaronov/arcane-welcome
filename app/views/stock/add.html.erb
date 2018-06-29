@@ -10,14 +10,25 @@
         </div>
       </div>
       <div class="row bg-light p-3">
-        <div class="col-6">
-          <%= form_for @posts, as: :stock do |f| %>
-            <%= f.text_field :name %><br>
-            <%= f.text_field :price %><br>
-            <%= f.text_field :interest %><br>
-            <%= f.text_field :duration %><br>
-            <%= f.submit 'Add Stock' %>
-          <% end %>
+          <div class="col-6">
+            <%= form_for @posts do |f| %>
+              <div class="form-group">
+                <label><%= f.label :name %></label>
+                <%= f.text_field :name, autofocus: true, autocomplete: "off", :class => 'form-control' %>
+              </div>
+
+              <div class="form-group">
+                <label><%= f.label :duration %></label>
+                <%= f.text_field :duration, autocomplete: "off", :class => 'form-control' %>
+              </div>
+
+              <div class="text-right">
+                <%= f.submit "Add", :class => 'btn btn-primary button-width' %>
+              </div>
+            <% end %>
+          </div>
+          <div class="col-6"></div>
+        </div>
         </div>
         <div class="col-6"></div>
       </div>

@@ -4,6 +4,6 @@ class StockController < ApplicationController
   end
 
   def posts
-    @posts = Post.all
+    @posts = Post.find(params[:id])
   end
 end

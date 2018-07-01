@@ -24,7 +24,8 @@
                       <h5 class="font-weight-light"><%= post.name %></h5>
                     </div>
                     <div class="col-4 text-right">
-                      <%= link_to "Destroy", post, method: :delete, data: { confirm: "Are you sure?" } %>
+                      <button type="button" class="btn btn-outline-primary">Primary</button>
+                      <button href="<%= link_to "Destroy", post, method: :delete, data: { confirm: "Are you sure?" } %>" type="button" class="btn btn-outline-secondary">Secondary</button>
                     </div>
                   </div>
                 </div>

@@ -1,6 +1,6 @@
 class StockController < ApplicationController
   def index
-    @posts = Post.all
+    @posts = Post.limit(5)
   end
 
   def posts

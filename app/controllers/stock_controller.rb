@@ -3,7 +3,7 @@ class StockController < ApplicationController
     @posts = Post.all
   end
 
-  def post
+  def posts
     def create
       @posts = Post.new(post_params)
       if @posts.save

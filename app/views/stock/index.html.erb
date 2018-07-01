@@ -25,10 +25,10 @@
                     </div>
                     <div class="col-4 text-right">
                       <div class="btn btn-secondary">
-                        <%= link_to "Destroy", post, method: :delete, data: { confirm: "Are you sure?" }, :class => "btn remove-btn" %>
+                        <%= link_to "Destroy", @posts, :method => :delete , data: { confirm: "Are you sure?" }, :class => "btn remove-btn" %>
                       </div>
-                      <div class="btn btn-secondary">
-                        <%= link_to "Destroy", post, method: :delete, data: { confirm: "Are you sure?" }, :class => "btn" %>
+                      <div class="btn btn-primary">
+                        <%= link_to "Show", @posts, :method => :get, :class => "btn details-btn" %>
                       </div>
                     </div>
                   </div>
@@ -51,7 +51,7 @@
     border: none !important;
     box-shadow: 3px 0px 9px 0px #e4e4e4;
   }
-  .remove-btn {
+  .remove-btn, .details-btn {
     color: #FFF !important;
   }
 </style>

@@ -24,6 +24,9 @@
                       <h5 class="font-weight-light"><%= post.name %></h5>
                     </div>
                     <div class="col-4 text-right">
+                      <div class="btn btn-secondary">
+                        <%= link_to "Delete", post, method: :delete, data: { confirm: "Are you sure?"}, :class => "btn remove-btn" %>
+                      </div>
                       <div class="btn btn-primary">
                         <%= link_to "Show", post, :class => "btn details-btn" %>
                       </div>

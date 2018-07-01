@@ -9,13 +9,6 @@
           <h1>Stock productivity calculator</h1>
         </div>
       </div>
-      <div class="row">
-        <div class="col pl-0 pr-0">
-          <div class="alert alert-success" role="alert">
-            A simple success alert—check it out!
-          </div>
-        </div>
-      </div>
       <div class="row bg-light p-5">
         <div class="col-12 text-center">
           <% if user_signed_in? %>
@@ -24,13 +17,18 @@
               <a role="button" class="btn btn-primary" href="posts">+ Add Stock</a>
             <% else %>
               <% @posts.each do |post| %>
-                <tr>
-                  <td><%= post.name %></td>
-                  <td><%= post.price %></td>
-                  <td><%= post.duration %></td>
-                  <td><%= post.interest %></td>
-                  <td><%= link_to "Destroy", post, method: :delete, data: { confirm: "Are you sure?" } %></td>
-                </tr>
+                <div class="card">
+                  <div class="card-body row">
+                    <div class="col-8">
+                      <h5 class="card-title"><%= post.name %></h5>
+                    </div>
+                    <div class="col-4">
+                      <a class="btn btn-primary">
+                        <%= link_to "Destroy", post, method: :delete, data: { confirm: "Are you sure?" } %>
+                      </a>
+                    </div>
+                  </div>
+                </div>
             <% end %>
           <% end %>
 

@@ -4,7 +4,7 @@ class PostsController < ApplicationController
     if @posts.save
       redirect_to :controller => 'stock', :action => 'index'
     else
-      redirect_to :controller => 'stock', :action => 'index'
+
     end
   end
 

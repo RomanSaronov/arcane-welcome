@@ -1,5 +1,6 @@
 <h1>Hello!</h1>
+<% if :posts.blank? %>
   <h5 class="mb-2 text-muted font-weight-light">No post</h5>
-
-      <h1><%= @posts.name %></h1>
-
+<% else %>
+  <%= :post.name %>
+<%end %>

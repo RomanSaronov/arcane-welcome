@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def create
-    @posts = Posts.new(post_params)
+    @posts = Post.new(post_params)
     if @posts.save
       redirect_to :controller => 'stock', :action => 'index'
     else

@@ -12,10 +12,9 @@
       <div class="row bg-light p-5">
         <div class="col-12 text-center">
           <% if user_signed_in? %>
-            <h5 class="mb-2 text-muted font-weight-light">No stocks available. Please add stock</h5>
-
             <% if @posts.blank? %>
-            <h5>No stocks</h5>
+              <h5 class="mb-2 text-muted font-weight-light">No stocks available. Please add stock</h5>
+              <a role="button" class="btn btn-primary" href="posts">+ Add Stock</a>
             <% else %>
               <% @posts.each do |post| %>
                 <tr>

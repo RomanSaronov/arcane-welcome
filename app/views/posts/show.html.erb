@@ -1,2 +1,21 @@
-<h1>Hello!</h1>
-  <%= @posts.name %>
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-12 pl-0 pr-0">
+      <h1><%= @posts.name %></h1>
+    </div>
+  </div>
+  <div class="row bg-light pt-4 pb-4">
+    <h5>Unit price:<%= @posts.price %></h5>
+    <h5>Duration:<%= @posts.duration %></h5>
+    <h5>Interest:<%= @posts.interest %></h5>
+  </div>
+</div>
+</body>
+</html>
+
+

@@ -17,12 +17,12 @@
               <a role="button" class="btn btn-primary" href="posts">+ Add Stock</a>
             <% else %>
               <% @posts.each do |post| %>
-                <div class="card mb-1">
+                <div class="card mb-2">
                   <div class="card-body row text-left">
                     <div class="col-8">
                       <h5 class="card-title"><%= post.name %></h5>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 text-right">
                       <%= link_to "Destroy", post, method: :delete, data: { confirm: "Are you sure?" } %>
                     </div>
                   </div>
@@ -39,4 +39,10 @@
   </body>
 </html>
 
+<style>
+  .card {
+    border-radius: 4px !important;
+    border: none !important;
+  }
+</style>
 

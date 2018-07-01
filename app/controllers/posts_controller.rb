@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   def create
     @posts = Post.new(post_params)
-    if @posts.save
+    if @posts.save!
       redirect_to root_path,
       flash[:success] = "Stock is created successfully!"
     else

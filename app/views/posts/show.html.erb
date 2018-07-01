@@ -2,7 +2,7 @@
 <% if :posts.blank? %>
   <h5 class="mb-2 text-muted font-weight-light">No post</h5>
   <% else %>
-    <% :posts.each do |post| %>
+    <% @posts.each do |post| %>
       <h1><%= post.name %></h1>
   <%end %>
 <%end %>

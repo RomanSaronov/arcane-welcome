@@ -28,7 +28,7 @@
                         <%= link_to "Destroy", posts_path(post), :method => :delete , :data => {:confirm => "Are You Sure?"}, :class => "btn remove-btn" %>
                       </div>
                       <div class="btn btn-primary">
-                        <%= link_to "Show", posts_path(post), :method => :get, :class => "btn details-btn" %>
+                        <%= link_to "Show", posts_path(id: post), :method => :get, :class => "btn details-btn" %>
                       </div>
                     </div>
                   </div>

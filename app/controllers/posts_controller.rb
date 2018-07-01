@@ -4,7 +4,7 @@ class PostsController < ApplicationController
     if @posts.save
       redirect_to :controller => 'stock', :action => 'index'
     else
-
+      redirect_to root_path, alert: "Stock is created successfully!"
     end
   end
 

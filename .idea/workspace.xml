@@ -59,8 +59,8 @@
       <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            <state>
+              <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -478,21 +478,7 @@
       <workItem from="1530044928321" duration="24957000" />
       <workItem from="1530174576288" duration="12478000" />
       <workItem from="1530191411275" duration="24513000" />
-      <workItem from="1530280109216" duration="31912000" />
-    </task>
-    <task id="LOCAL-00222" summary="Posts implementation">
-      <created>1530470684374</created>
-      <option name="number" value="00222" />
-      <option name="presentableId" value="LOCAL-00222" />
-      <option name="project" value="LOCAL" />
-      <updated>1530470684375</updated>
-    </task>
-    <task id="LOCAL-00223" summary="Posts implementation">
-      <created>1530470760397</created>
-      <option name="number" value="00223" />
-      <option name="presentableId" value="LOCAL-00223" />
-      <option name="project" value="LOCAL" />
-      <updated>1530470760397</updated>
+      <workItem from="1530280109216" duration="32439000" />
     </task>
     <task id="LOCAL-00224" summary="Posts implementation">
       <created>1530470797877</created>
@@ -823,11 +809,25 @@
       <option name="project" value="LOCAL" />
       <updated>1530480212090</updated>
     </task>
-    <option name="localTasksCounter" value="271" />
+    <task id="LOCAL-00271" summary="Posts implementation">
+      <created>1530480376081</created>
+      <option name="number" value="00271" />
+      <option name="presentableId" value="LOCAL-00271" />
+      <option name="project" value="LOCAL" />
+      <updated>1530480376081</updated>
+    </task>
+    <task id="LOCAL-00272" summary="Posts implementation">
+      <created>1530480562793</created>
+      <option name="number" value="00272" />
+      <option name="presentableId" value="LOCAL-00272" />
+      <option name="project" value="LOCAL" />
+      <updated>1530480562793</updated>
+    </task>
+    <option name="localTasksCounter" value="273" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93860000" />
+    <option name="totallyTimeSpent" value="94387000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1181,8 +1181,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>

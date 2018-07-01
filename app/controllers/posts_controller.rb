@@ -10,4 +10,16 @@ class PostsController < ApplicationController
   def post_params
     params.require(:posts).permit(:name, :price, :duration, :interest)
   end
+
+  def destroy
+    @posts = Post.find(params[:id])
+    @post.destroy
+
+    redirect_to root_path
+  end
+
+  def show
+    @posts = Post.find(params[:id])
+  end
+
 end

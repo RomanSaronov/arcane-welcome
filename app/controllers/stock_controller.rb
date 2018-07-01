@@ -13,7 +13,6 @@ class StockController < ApplicationController
       end
     end
 
-    private
     def post_params
       params.require(:posts).permit(:name, :price, :duration, :interest)
     end

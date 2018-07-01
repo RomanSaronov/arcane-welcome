@@ -14,15 +14,19 @@
           <% if user_signed_in? %>
             <h5 class="mb-2 text-muted font-weight-light">No stocks available. Please add stock</h5>
 
-            <% @posts.each do |post| %>
-              <tr>
-                <td><%= post.name %></td>
-                <td><%= post.price %></td>
-                <td><%= post.duration %></td>
-                <td><%= post.interest %></td>
-                <td><%= link_to "Destroy", post, method: :delete, data: { confirm: "Are you sure?" } %></td>
-              </tr>
+            <% if @posts.blank? %>
+            <h5>No stocks</h5>
+            <% else %>
+              <% @posts.each do |post| %>
+                <tr>
+                  <td><%= post.name %></td>
+                  <td><%= post.price %></td>
+                  <td><%= post.duration %></td>
+                  <td><%= post.interest %></td>
+                  <td><%= link_to "Destroy", post, method: :delete, data: { confirm: "Are you sure?" } %></td>
+                </tr>
             <% end %>
+          <% end %>
 
           <% else # user not signed it %>
             <h5 class="mb-2 text-muted font-weight-light">Login or register for stock operations</h5>

@@ -32,8 +32,8 @@
       <file leaf-file-name="posts_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -451,28 +451,7 @@
       <workItem from="1530044928321" duration="24957000" />
       <workItem from="1530174576288" duration="12478000" />
       <workItem from="1530191411275" duration="24513000" />
-      <workItem from="1530280109216" duration="36381000" />
-    </task>
-    <task id="LOCAL-00247" summary="Posts implementation">
-      <created>1530475461086</created>
-      <option name="number" value="00247" />
-      <option name="presentableId" value="LOCAL-00247" />
-      <option name="project" value="LOCAL" />
-      <updated>1530475461087</updated>
-    </task>
-    <task id="LOCAL-00248" summary="Posts implementation">
-      <created>1530475672942</created>
-      <option name="number" value="00248" />
-      <option name="presentableId" value="LOCAL-00248" />
-      <option name="project" value="LOCAL" />
-      <updated>1530475672943</updated>
-    </task>
-    <task id="LOCAL-00249" summary="Posts implementation">
-      <created>1530476032271</created>
-      <option name="number" value="00249" />
-      <option name="presentableId" value="LOCAL-00249" />
-      <option name="project" value="LOCAL" />
-      <updated>1530476032272</updated>
+      <workItem from="1530280109216" duration="36625000" />
     </task>
     <task id="LOCAL-00250" summary="Posts implementation">
       <created>1530476410133</created>
@@ -796,11 +775,32 @@
       <option name="project" value="LOCAL" />
       <updated>1530487168426</updated>
     </task>
-    <option name="localTasksCounter" value="296" />
+    <task id="LOCAL-00296" summary="Posts implementation">
+      <created>1530487264172</created>
+      <option name="number" value="00296" />
+      <option name="presentableId" value="LOCAL-00296" />
+      <option name="project" value="LOCAL" />
+      <updated>1530487264172</updated>
+    </task>
+    <task id="LOCAL-00297" summary="Posts implementation">
+      <created>1530487940086</created>
+      <option name="number" value="00297" />
+      <option name="presentableId" value="LOCAL-00297" />
+      <option name="project" value="LOCAL" />
+      <updated>1530487940087</updated>
+    </task>
+    <task id="LOCAL-00298" summary="Posts implementation">
+      <created>1530487981604</created>
+      <option name="number" value="00298" />
+      <option name="presentableId" value="LOCAL-00298" />
+      <option name="project" value="LOCAL" />
+      <updated>1530487981605</updated>
+    </task>
+    <option name="localTasksCounter" value="299" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98329000" />
+    <option name="totallyTimeSpent" value="98573000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1147,8 +1147,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>

@@ -4,5 +4,6 @@ class StockController < ApplicationController
   end
 
   def posts
+    @posts = Post.all
   end
 end

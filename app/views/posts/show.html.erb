@@ -1,2 +1,4 @@
 <h1>Hello!</h1>
-<%= post.name %>
+<% @posts.each do |post| %>
+  <h2><%= post.name %></h2>
+<% end %>

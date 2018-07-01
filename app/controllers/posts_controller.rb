@@ -2,9 +2,7 @@ class PostsController < ApplicationController
   def create
     @posts = Post.new(post_params)
     if @posts.save
-      redirect_to root_path, alert: "Stock is created successfully!"
-    else
-      redirect_to root_path, alert: "Something goes wrong. Please try again!"
+      redirect_to root_path
     end
   end
 

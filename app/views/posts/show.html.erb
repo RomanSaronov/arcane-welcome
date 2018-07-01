@@ -1,4 +1,6 @@
 <h1>Hello!</h1>
-<% :posts.each do |post| %>
-  <h2><%= post.name %></h2>
-<% end %>
+<% if @posts.blank? %>
+  <h5 class="mb-2 text-muted font-weight-light">No post</h5>
+<% else %>
+  <h5>All clear</h5>
+<%end %>

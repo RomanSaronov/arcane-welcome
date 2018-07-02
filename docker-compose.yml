@@ -13,6 +13,7 @@ services:
       - db
     environment:
       DATABASE_URL: postgres://postgres@db
+      RAILS_ENV: production
   db:
     image: postgres:10.3-alpine
     environment:

@@ -14,7 +14,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -47,16 +47,6 @@ group :test do
   gem 'chromedriver-helper'
   # Adds support for Rspec
   gem 'rspec-rails', '~> 3.6'
-  # Adds support for Factory
-  gem 'factory_girl_rails'
-  # Add Rails Controller Testing
-  gem 'rails-controller-testing'
-  # Add Headless
-  gem 'headless'
-  # Add Poltergeist
-  gem 'poltergeist'
-  # Add Database Cleaner
-  gem 'database_cleaner'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

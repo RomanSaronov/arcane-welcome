@@ -14,14 +14,16 @@ Start Docker App
 Clone source code
 `git clone <repo-url>`
 
-Set suitable external port in docker-compose file (port 3000 is default), when run
-`docker-compose up`
+Rename docker example file to `docker-compose.yml` and change example configuration for your needs
 
-After complete initialization, open your browser `http://localhost:your-external-port/`
+Run Docker Compose in project folder
+`docker-compose up`
 
 Run database migrations:
 `rake db:migrate`
 
-Run database seed:
-`rake db:seed`
+After complete initialization, open your browser `http://localhost:your-external-port/`
+
+
+
 

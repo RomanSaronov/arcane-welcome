@@ -24,3 +24,9 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Docker Compose
+/docker-compose.yml
+
+# Idea
+/.idea

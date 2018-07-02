@@ -14,7 +14,7 @@
       <div class="col"><h5>Duration: <%= @posts.duration %> years</h5></div>
       <div class="col"><h5>Interest: <%= @posts.interest %>%</h5></div>
   </div>
-  <div class="row bg-secondary p-4 chart">
+  <div class="row p-4 chart">
     <canvas id="myChart" width="400" height="400"></canvas>
     <%= javascript_tag defer: 'defer' do %>
           var ctx = document.getElementById("myChart").getContext('2d');

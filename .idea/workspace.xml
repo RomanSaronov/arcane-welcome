@@ -4,6 +4,9 @@
     <list default="true" id="2a4c4dac-986e-4da8-be89-464f81dae327" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -29,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+            <state relative-caret-position="270">
+              <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -41,8 +44,8 @@
       <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="90" lean-forward="true" selection-start-line="20" selection-start-column="90" selection-end-line="20" selection-end-column="90" />
+            <state relative-caret-position="285">
+              <caret line="19" column="198" selection-start-line="19" selection-start-column="198" selection-end-line="19" selection-end-column="198" />
             </state>
           </provider>
         </entry>
@@ -59,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+            <state relative-caret-position="391">
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
             </state>
           </provider>
         </entry>
@@ -141,8 +144,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_navigation.html.erb" />
         <option value="$PROJECT_DIR$/app/views/stock/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/posts/show.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/posts/show.html.erb" />
       </list>
     </option>
   </component>
@@ -343,21 +346,7 @@
       <workItem from="1530044928321" duration="24957000" />
       <workItem from="1530174576288" duration="12478000" />
       <workItem from="1530191411275" duration="24513000" />
-      <workItem from="1530280109216" duration="45365000" />
-    </task>
-    <task id="LOCAL-00288" summary="Posts implementation">
-      <created>1530484573971</created>
-      <option name="number" value="00288" />
-      <option name="presentableId" value="LOCAL-00288" />
-      <option name="project" value="LOCAL" />
-      <updated>1530484573971</updated>
-    </task>
-    <task id="LOCAL-00289" summary="Posts implementation">
-      <created>1530485024316</created>
-      <option name="number" value="00289" />
-      <option name="presentableId" value="LOCAL-00289" />
-      <option name="project" value="LOCAL" />
-      <updated>1530485024317</updated>
+      <workItem from="1530280109216" duration="45838000" />
     </task>
     <task id="LOCAL-00290" summary="Posts implementation">
       <created>1530485981867</created>
@@ -688,11 +677,25 @@
       <option name="project" value="LOCAL" />
       <updated>1530522162059</updated>
     </task>
-    <option name="localTasksCounter" value="337" />
+    <task id="LOCAL-00337" summary="Tests implementation">
+      <created>1530522578840</created>
+      <option name="number" value="00337" />
+      <option name="presentableId" value="LOCAL-00337" />
+      <option name="project" value="LOCAL" />
+      <updated>1530522578840</updated>
+    </task>
+    <task id="LOCAL-00338" summary="Tests implementation">
+      <created>1530522688763</created>
+      <option name="number" value="00338" />
+      <option name="presentableId" value="LOCAL-00338" />
+      <option name="project" value="LOCAL" />
+      <updated>1530522688763</updated>
+    </task>
+    <option name="localTasksCounter" value="339" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107313000" />
+    <option name="totallyTimeSpent" value="107786000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -713,8 +716,8 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.63529414" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49499285" weight="0.28627452" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21530758" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49499285" visible="true" weight="0.28627452" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21530758" />
       <window_info anchor="bottom" id="Docker" order="7" weight="0.32941177" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
@@ -1044,13 +1047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="90" lean-forward="true" selection-start-line="20" selection-start-column="90" selection-end-line="20" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/stock/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
@@ -1058,17 +1054,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+        <state relative-caret-position="391">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+        <state relative-caret-position="285">
+          <caret line="19" column="198" selection-start-line="19" selection-start-column="198" selection-end-line="19" selection-end-column="198" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
         </state>
       </provider>
     </entry>

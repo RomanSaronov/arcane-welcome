@@ -25,4 +25,3 @@ Run database migrations:
 Run database seed:
 `rake db:seed`
 
-Thank you.

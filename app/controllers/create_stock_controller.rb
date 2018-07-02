@@ -1,0 +1,3 @@
+class CreateStockController < ApplicationController
+
+end

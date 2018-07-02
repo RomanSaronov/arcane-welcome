@@ -1,26 +1,14 @@
-# README
+# ArcaneBet Welcome challenge
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Task**<br>
+You can find <a href="https://gist.githubusercontent.com/badmanski/4319526afe127ec33d1e8b4cab99ebdb/raw/fd6f7c6f06d24a7ecde28e5b11f456482ab5d6f4/welcome-challenge-rb.md">here</a>
 
-Things you may want to cover:
+**Quick start**<br>
+Download latest Docker app from docker.com
 
-* Ruby version - 5.2.0
+Set suitable external port in docker-compose file, when run
+`docker-compose up`
 
-* Rails version - 2.5.1
+After complete initilization, open your browser `http://localhost:your-external-port/`
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

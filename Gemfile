@@ -46,7 +46,17 @@ group :test do
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
   # Adds support for Rspec
-  gem 'rspec', '~> 3.7'
+  gem 'rspec-rails', '~> 3.6'
+  # Adds support for Factory
+  gem 'factory_girl_rails'
+  # Add Rails Controller Testing
+  gem 'rails-controller-testing'
+  # Add Headless
+  gem 'headless'
+  # Add Poltergeist
+  gem 'poltergeist'
+  # Add Database Cleaner
+  gem 'database_cleaner'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

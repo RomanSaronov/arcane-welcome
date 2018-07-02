@@ -12,8 +12,8 @@ services:
     depends_on:
       - db
     environment:
-      DATABASE_URL: postgres://postgres@db
-      RAILS_ENV: production
+      DATABASE_URL: postgresql://test:test@db/test_db
+      SECRET_KEY_BASE: 94dca93cbb9cfe6d4ea02765a7b0e28b9de8f6d3e9bca62ece5bc9f580659001200fd6a38856d329a8821affdc885230ac2330c14c3342f330974d3fc913cbac
   db:
     image: postgres:10.3-alpine
     environment:

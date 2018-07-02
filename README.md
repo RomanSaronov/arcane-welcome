@@ -19,4 +19,10 @@ Set suitable external port in docker-compose file (port 3000 is default), when r
 
 After complete initialization, open your browser `http://localhost:your-external-port/`
 
+Run database migrations:
+`rake db:migrate`
+
+Run database seed:
+`rake db:seed`
+
 Thank you.

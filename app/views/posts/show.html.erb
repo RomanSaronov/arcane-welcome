@@ -15,8 +15,8 @@
       <div class="col"><h5>Interest: <%= @posts.interest %>%</h5></div>
   </div>
   <div class="row p-4 chart">
+    <canvas id="myChart" width="400" height="400"></canvas>
     <%= javascript_tag do %>
-      <canvas id="myChart" width="400" height="400"></canvas>
           var ctx = document.getElementById("myChart").getContext('2d');
           var myChart = new Chart(ctx, {
               type: 'bar',

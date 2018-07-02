@@ -61,8 +61,8 @@ GEM
       rack (>= 1.6.0)
       rack-test (>= 0.6.3)
       xpath (~> 3.1)
-    chart-js-rails (0.1.6)
-      railties (> 3.1)
+    chart (0.1.5.1)
+      rails
     childprocess (0.9.0)
       ffi (~> 1.0, >= 1.0.11)
     chromedriver-helper (1.2.0)
@@ -223,7 +223,7 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
   capybara (>= 2.15, < 4.0)
-  chart-js-rails
+  chart
   chromedriver-helper
   devise
   jbuilder (~> 2.5)

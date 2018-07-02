@@ -15,9 +15,8 @@
       <div class="col"><h5>Interest: <%= @posts.interest %>%</h5></div>
   </div>
   <div class="row bg-secondary p-4 chart">
+    <canvas id="myChart" width="400" height="400"></canvas>
     <%= javascript_tag defer: 'defer' do %>
-      <canvas id="myChart" width="400" height="400"></canvas>
-      <script>
           var ctx = document.getElementById("myChart").getContext('2d');
           var myChart = new Chart(ctx, {
               type: 'bar',
@@ -55,7 +54,6 @@
                   }
               }
           });
-      </script>
     <% end -%>
   </div>
 </div>

@@ -15,7 +15,9 @@
       <div class="col"><h5>Interest: <%= @posts.interest %>%</h5></div>
   </div>
   <div class="row bg-secondary p-4 chart">
-    javascript_tag "alert('Yo')"
+    <%= javascript_tag defer: 'defer' do -%>
+      alert('All is good')
+    <% end -%>
   </div>
 </div>
 </body>

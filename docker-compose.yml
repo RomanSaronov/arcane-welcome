@@ -18,8 +18,4 @@ services:
     image: postgres:10.3-alpine
     volumes:
           - ./tmp/db:/var/lib/postgresql/data
-    environment:
-      POSTGRES_PASSWORD: test
-      POSTGRES_USER: test
-      POSTGRES_DB: test_db
 

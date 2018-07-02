@@ -57,3 +57,6 @@ gem 'rubocop', '~> 0.57.2'
 
 # Adds Devise for auth
 gem 'devise'
+
+# Adds Chart.js library for Charts
+gem 'chart-js-rails'

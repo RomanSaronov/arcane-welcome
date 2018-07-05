@@ -15,6 +15,10 @@
       <div class="col"><h5>Interest: <%= @posts.interest %>%</h5></div>
   </div>
   <div class="row bg-secondary p-4 chart">
+    <%= javascript_tag defer: 'defer' do %>
+        var price = <%= @posts.price %>
+        console.log(price)
+    <% end -%>
   </div>
 </div>
 </body>

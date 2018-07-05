@@ -15,7 +15,6 @@
       <div class="col"><h5>Interest: <%= @posts.interest %>%</h5></div>
   </div>
   <div class="row bg-secondary p-4 chart">
-    <canvas id="myChart" width="100%" height="500"></canvas>
     <%= javascript_tag defer: 'defer' do %>
       var price = <%= @posts.price %>
       var duration = <%= @posts.duration %>
@@ -62,6 +61,7 @@
       }
       });
     <% end -%>
+    <canvas id="myChart" width="100%" height="500"></canvas>
   </div>
 </div>
 </body>

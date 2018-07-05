@@ -19,7 +19,8 @@
         var price = <%= @posts.price %>
         var duration = <%= @posts.duration %>
         var interest = <%= @posts.interest %>
-        var final_price = price * pow(1 + interest / 100, duration)
+        var rate_of_return = 1 + (interest / 100)
+        var final_price = price * pow(rate_of_return, duration)
         console.log('Final Price is: ', final_price)
     <% end -%>
   </div>

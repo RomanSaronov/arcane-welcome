@@ -19,7 +19,6 @@
     <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"%>
 
     <%= javascript_tag defer: 'defer' do %>
-      var Chart = require('chart.js')
       var price = <%= @posts.price %>
       var duration = <%= @posts.duration %>
       var interest = <%= @posts.interest %>

@@ -23,8 +23,8 @@
       var final_price = price * Math.pow(rate_of_return, duration)
       console.log('Final Price is: ', final_price)
 
-      var ctx = document.getElementById("myChart").getContext('2d');
-      var myChart = new Chart(ctx, {
+      var ctx = document.getElementById("InerestChart").getContext('2d');
+      var InerestChart = new Chart(ctx, {
       type: 'line',
       data: {
       labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -61,7 +61,7 @@
       }
       });
     <% end -%>
-    <canvas id="myChart" width="100%" height="500"></canvas>
+    <canvas id="InterestChart" width="100%" height="500"></canvas>
   </div>
 </div>
 </body>

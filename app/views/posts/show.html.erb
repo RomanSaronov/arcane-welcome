@@ -17,7 +17,10 @@
   <div class="row bg-secondary p-4 chart">
     <%= javascript_tag defer: 'defer' do %>
         var price = <%= @posts.price %>
-        console.log(price)
+        var duration = <%= @posts.duration %>
+        var interest = <%= @posts.interest %>
+        var final_price = price * pow(1 + interest / 100, duration)
+        console.log('Final Price is: ', final_price)
     <% end -%>
   </div>
 </div>

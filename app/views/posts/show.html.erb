@@ -24,7 +24,7 @@
       var interest = <%= @posts.interest %>
       var rateOfReturn = 1 + (interest / 100)
       var finalPrice = price * Math.pow(rateOfReturn, duration)
-      var yearNow = new Date().getFullYear()
+      var yearNow = moment()
       var returnYear = moment().add(duration, 'years')
       console.log('Final Price is: ', finalPrice)
       console.log('Years: ', yearNow, returnYear)

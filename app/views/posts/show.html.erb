@@ -22,9 +22,9 @@
       var price = <%= @posts.price %>
       var duration = <%= @posts.duration %>
       var interest = <%= @posts.interest %>
-      var rateOfReturn = 1 + (interest / 100);
-      var yearNow = moment();
-      var returnYear = moment().add(duration, 'years');
+      const rateOfReturn = 1 + (interest / 100);
+      const yearNow = moment();
+      const returnYear = moment().add(duration, 'years');
       let initialYear = (new Date()).getFullYear();
 
       const result = [];
@@ -39,36 +39,36 @@
 
       console.log('Final Price is: ', result);
 
-      var ctx = document.getElementById("InterestChart").getContext('2d');
-      var InterestChart = new Chart(ctx, {
-      type: 'bar',
-      data: {
-        datasets: [{
-          data: result,
-          label: "Valuation",
-          borderWidth: 2,
-          borderColor: "#333333",
-          fill: false,
-        }]
-      },
-      options: {
-        scales: {
-          xAxes: [{
-            type: 'time',
-            time: {
-              unit: 'year',
-              displayFormats: {
-                    year: 'YYYY',
-              },
-              min: yearNow,
-              max: returnYear
-            },
-            gridLines: {
-            offsetGridLines: true
-            }
-          }],
+      const ctx = document.getElementById("InterestChart").getContext('2d');
+      const InterestChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          datasets: [{
+            data: result,
+            label: "Valuation",
+            borderWidth: 2,
+            borderColor: "#333333",
+            fill: false,
+          }]
         },
-      },
+        options: {
+          scales: {
+            xAxes: [{
+              type: 'time',
+              time: {
+                unit: 'year',
+                displayFormats: {
+                      year: 'YYYY',
+                },
+                min: yearNow,
+                max: returnYear
+              },
+              gridLines: {
+                offsetGridLines: true
+              }
+            }],
+          },
+        },
       })
     <% end -%>
   </div>

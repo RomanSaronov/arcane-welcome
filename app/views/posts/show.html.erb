@@ -25,7 +25,7 @@
       var rateOfReturn = 1 + (interest / 100)
       var finalPrice = price * Math.pow(rateOfReturn, duration)
       var yearNow = new Date()
-      var returnYear = yearNow + duration
+      var returnYear = yearNow.add(duration, 'years')
       console.log('Final Price is: ', finalPrice)
       console.log('Years: ', yearNow, returnYear)
 

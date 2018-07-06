@@ -63,12 +63,12 @@
       plugins: [{
         beforeInit: function(chart) {
           var time = chart.options.scales.xAxes[0].time, // 'time' object reference
-          timeDiff = moment(time.max).diff(moment(time.min), 'YYYY'); // difference (in days) between min and max date
+          timeDiff = moment(time.max).diff(moment(time.min), 'years'); // difference (in years) between min and max date
           // populate 'labels' array
           // (create a date string for each date between min and max, inclusive)
           for (i = 0; i <= timeDiff; i++) {
-          var _label = moment(time.min).add(i, 'YYYY').format('YYYY-MM-DD HH:mm:ss');
-          chart.data.labels.push(_label);
+            var _label = moment(time.min).add(i, 'years').format('YYYY');
+            chart.data.labels.push(_label);
           }
         }
       }]

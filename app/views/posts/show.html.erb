@@ -28,6 +28,7 @@
       var ctx = document.getElementById("InterestChart").getContext('2d');
       var InterestChart = new Chart(ctx, {
       type: 'line',
+      data: [price, final_price],
       options: {
         scales: {
             xAxes: [{

@@ -31,9 +31,6 @@
       var InterestChart = new Chart(ctx, {
       type: 'line',
       data: [{
-        x: new Date(),
-        y: price
-        }, {
         t: new Date(),
         y: final_price
       }],
@@ -45,8 +42,8 @@
             }],
             yAxes: [{
                 ticks: {
-                    min: price - offset,
-                    max: final_price + offset
+                    min: price,
+                    max: final_price
                 }
             }]
         },

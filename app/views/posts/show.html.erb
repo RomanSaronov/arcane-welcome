@@ -22,18 +22,19 @@
       var price = <%= @posts.price %>
       var duration = <%= @posts.duration %>
       var interest = <%= @posts.interest %>
-      var rate_of_return = 1 + (interest / 100)
-      var final_price = price * Math.pow(rate_of_return, duration)
+      var rateOfReturn = 1 + (interest / 100)
+      var finalPrice = price * Math.pow(rateOfReturn, duration)
       var yearNow = (new Date()).getFullYear()
-      console.log('Final Price is: ', final_price)
-      console.log('Years: ', yearNow, yearNow + duration)
+      var returnYear = yearNow + duration
+      console.log('Final Price is: ', finalPrice)
+      console.log('Years: ', yearNow, returnYear)
 
       var ctx = document.getElementById("InterestChart").getContext('2d');
       var InterestChart = new Chart(ctx, {
       type: 'line',
       data: {
         datasets: [{
-          data: [{x: yearNow, y:price},{x: yearNow + duration, y:final_price}],
+          data: [{x: yearNow, y:price},{x: returnYear, y:finalPrice}],
           label: "Interest",
           borderWidth: 2,
           borderColor: "#333333",

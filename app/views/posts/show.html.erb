@@ -33,7 +33,7 @@
       type: 'line',
       data: {
         datasets: [{
-          data: [price, final_price],
+          data: [{x: yearNow, y:price},{x: yearNow + duration, y:final_price}],
           label: "Interest",
           borderWidth: 2,
           borderColor: "#333333",

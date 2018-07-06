@@ -31,14 +31,23 @@
       var InterestChart = new Chart(ctx, {
       type: 'line',
       data: [{
-        t: new Date(),
-        y: final_price
+        x: new Date(), //year now
+        y: price // price
+        }, {
+        t: new Date(), // Duration: Year now + duration
+        y: final_price // final price
       }],
       options: {
         scales: {
             xAxes: [{
                 type: 'time',
-                distribution: 'series',
+                time: {
+                    unit: 'year',
+                    displayFormats: {
+                        year: 'YYYY'
+                    }
+                },
+                distribution: 'series'
             }],
             yAxes: [{
                 ticks: {

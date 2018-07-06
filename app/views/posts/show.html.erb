@@ -23,28 +23,26 @@
       var duration = <%= @posts.duration %>;
       var interest = <%= @posts.interest %>;
       var rateOfReturn = 1 + (interest / 100);
-
-      let yearNow = moment();
-      const returnYear = moment().add(duration, 'years');
-      console.log('Final Price is: ', result);
-      console.log('Years: ', yearNow, returnYear);
+      let initialYear = (new Date()).getFullYear();
 
       const result = [];
 
       for (let i = 1; i <= duration; ++i) {
         result.push({
-          x: yearNow,
+          x: initialYear,
           y: price * Math.pow(rateOfReturn, i)
         });
         ++initialYear
       }
+
+      console.log('Final Price is: ', result);
 
       var ctx = document.getElementById("InterestChart").getContext('2d');
       var InterestChart = new Chart(ctx, {
       type: 'bar',
       data: {
         datasets: [{
-          data: [{t: yearNow, y:price}, {t: yearNow + 1, y:price + 20}, {t: returnYear, y:finalPrice}],
+          data: result,
           label: "Valuation",
           borderWidth: 2,
           borderColor: "#333333",

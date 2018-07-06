@@ -43,17 +43,21 @@
       },
       options: {
         scales: {
-            xAxes: [{
-                type: 'time',
-                distribution: 'series',
-                time: {
-                    unit: 'year',
-                    displayFormats: {
-                        year: 'YYYY'
-                    },
-                    stepSize: 1,
-                },
-            }],
+      xAxes: [{
+      type: 'time',
+      time: {
+      parser: 'YYYY-MM-DD HH:mm:ss',
+      unit: 'day',
+      displayFormats: {
+      day: 'ddd'
+      },
+      min: '2017-10-02 18:43:53',
+      max: '2017-10-09 18:43:53'
+      },
+      ticks: {
+      source: 'data'
+      }
+      }],
             yAxes: [{
                 ticks: {
                     min: 0,

@@ -38,7 +38,6 @@
           borderWidth: 2,
           borderColor: "#333333",
           fill: false,
-          pointRadius: 0
         }]
       },
       options: {
@@ -49,8 +48,8 @@
                 unit: 'year',
                 displayFormats: {
                       year: 'YYYY',
-                  },
-                min: yearNow,
+                },
+                min: (new Date()).getFullYear(),
                 max: yearNow + duration
               },
               ticks: {

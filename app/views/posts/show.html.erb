@@ -19,15 +19,25 @@
   <div class="row  p-4 chart">
     <canvas id="InterestChart"></canvas>
     <%= javascript_tag defer: 'defer' do %>
-      var price = <%= @posts.price %>
-      var duration = <%= @posts.duration %>
-      var interest = <%= @posts.interest %>
-      var rateOfReturn = 1 + (interest / 100)
-      var finalPrice = price * Math.pow(rateOfReturn, duration)
-      var yearNow = moment()
-      var returnYear = moment().add(duration, 'years')
-      console.log('Final Price is: ', finalPrice)
-      console.log('Years: ', yearNow, returnYear)
+      var price = <%= @posts.price %>;
+      var duration = <%= @posts.duration %>;
+      var interest = <%= @posts.interest %>;
+      var rateOfReturn = 1 + (interest / 100);
+
+      let yearNow = moment();
+      const returnYear = moment().add(duration, 'years');
+      console.log('Final Price is: ', result);
+      console.log('Years: ', yearNow, returnYear);
+
+      const result = [];
+
+      for (let i = 1; i <= duration; ++i) {
+        result.push({
+          x: yearNow,
+          y: price * Math.pow(rateOfReturn, i)
+        });
+        ++initialYear
+      }
 
       var ctx = document.getElementById("InterestChart").getContext('2d');
       var InterestChart = new Chart(ctx, {

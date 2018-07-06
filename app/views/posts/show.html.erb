@@ -34,7 +34,7 @@
       type: 'bar',
       data: {
         datasets: [{
-          data: [{t: yearNow, y:price},{t: returnYear, y:finalPrice}],
+          data: [{t: yearNow, y:price}, {t: returnYear, y:finalPrice}],
           label: "Valuation",
           borderWidth: 2,
           borderColor: "#333333",
@@ -43,35 +43,20 @@
       },
       options: {
         scales: {
-            xAxes: [{
-              type: 'time',
-              time: {
-                parser: 'YYYY-MM-DD HH:mm:ss',
-                unit: 'year',
-                displayFormats: {
-                      year: 'YYYY',
-                },
-                min: yearNow,
-                max: returnYear
+          xAxes: [{
+            type: 'time',
+            time: {
+              parser: 'YYYY-MM-DD HH:mm:ss',
+              unit: 'year',
+              displayFormats: {
+                    year: 'YYYY',
               },
-              ticks: {
-                  source: 'data'
-              }
-            }],
+              min: yearNow,
+              max: returnYear
+            },
+          }],
         },
       },
-      plugins: [{
-        beforeInit: function(chart) {
-          var time = chart.options.scales.xAxes[0].time, // 'time' object reference
-          timeDiff = moment(time.max).diff(moment(time.min), 'years'); // difference (in years) between min and max date
-          // populate 'labels' array
-          // (create a date string for each date between min and max, inclusive)
-          for (i = 0; i <= timeDiff; i++) {
-            var _label = moment(time.min).add(i, 'years').format('YYYY');
-            chart.data.labels.push(_label);
-          }
-        }
-      }]
       })
     <% end -%>
   </div>

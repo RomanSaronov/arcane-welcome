@@ -24,6 +24,7 @@
       var interest = <%= @posts.interest %>
       var rate_of_return = 1 + (interest / 100)
       var final_price = price * Math.pow(rate_of_return, duration)
+      var offset = 50
       console.log('Final Price is: ', final_price)
 
       var ctx = document.getElementById("InterestChart").getContext('2d');
@@ -40,18 +41,12 @@
         scales: {
             xAxes: [{
                 type: 'time',
-                time: {
-                    displayFormats: {
-                        year: 'YYYY',
-                        unit: 'year'
-                    },
-                    distribution: 'series',
-                }
+                distribution: 'series',
             }],
             yAxes: [{
                 ticks: {
-                    min: price,
-                    max: final_price
+                    min: price - offset,
+                    max: final_price + offset
                 }
             }]
         },

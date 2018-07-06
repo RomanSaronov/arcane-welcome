@@ -23,8 +23,8 @@
       <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+            <state relative-caret-position="60">
+              <caret line="4" column="95" selection-start-line="4" selection-start-column="95" selection-end-line="4" selection-end-column="95" />
             </state>
           </provider>
         </entry>
@@ -326,21 +326,7 @@
       <workItem from="1530174576288" duration="12478000" />
       <workItem from="1530191411275" duration="24513000" />
       <workItem from="1530280109216" duration="61168000" />
-      <workItem from="1530795987687" duration="6954000" />
-    </task>
-    <task id="LOCAL-00329" summary="Tests implementation">
-      <created>1530520890009</created>
-      <option name="number" value="00329" />
-      <option name="presentableId" value="LOCAL-00329" />
-      <option name="project" value="LOCAL" />
-      <updated>1530520890009</updated>
-    </task>
-    <task id="LOCAL-00330" summary="Tests implementation">
-      <created>1530521014380</created>
-      <option name="number" value="00330" />
-      <option name="presentableId" value="LOCAL-00330" />
-      <option name="project" value="LOCAL" />
-      <updated>1530521014380</updated>
+      <workItem from="1530795987687" duration="7263000" />
     </task>
     <task id="LOCAL-00331" summary="Tests implementation">
       <created>1530521252184</created>
@@ -671,11 +657,25 @@
       <option name="project" value="LOCAL" />
       <updated>1530826848081</updated>
     </task>
-    <option name="localTasksCounter" value="378" />
+    <task id="LOCAL-00378" summary="Interest chart implementation">
+      <created>1530826899958</created>
+      <option name="number" value="00378" />
+      <option name="presentableId" value="LOCAL-00378" />
+      <option name="project" value="LOCAL" />
+      <updated>1530826899958</updated>
+    </task>
+    <task id="LOCAL-00379" summary="Interest chart implementation">
+      <created>1530861542859</created>
+      <option name="number" value="00379" />
+      <option name="presentableId" value="LOCAL-00379" />
+      <option name="project" value="LOCAL" />
+      <updated>1530861542859</updated>
+    </task>
+    <option name="localTasksCounter" value="380" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130070000" />
+    <option name="totallyTimeSpent" value="130379000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1022,8 +1022,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        <state relative-caret-position="60">
+          <caret line="4" column="95" selection-start-line="4" selection-start-column="95" selection-end-line="4" selection-end-column="95" />
         </state>
       </provider>
     </entry>

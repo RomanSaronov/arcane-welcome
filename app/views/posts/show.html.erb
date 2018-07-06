@@ -31,7 +31,7 @@
 
       for (let i = 1; i <= duration; ++i) {
         result.push({
-          t: initialYear,
+          t: moment().year(initialYear),
           y: price * Math.pow(rateOfReturn, i)
         });
         ++initialYear

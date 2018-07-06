@@ -34,7 +34,7 @@
       type: 'bar',
       data: {
         datasets: [{
-          data: [{t: yearNow, y:price}, {t: returnYear, y:finalPrice}],
+          data: [price, finalPrice],
           label: "Valuation",
           borderWidth: 2,
           borderColor: "#333333",
@@ -46,7 +46,6 @@
           xAxes: [{
             type: 'time',
             time: {
-              parser: 'YYYY-MM-DD HH:mm:ss',
               unit: 'year',
               displayFormats: {
                     year: 'YYYY',

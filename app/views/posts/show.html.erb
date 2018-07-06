@@ -42,15 +42,14 @@
         scales: {
             xAxes: [{
                 type: 'time',
+                distribution: 'series',
                 time: {
                     unit: 'year',
                     displayFormats: {
                         year: 'YYYY'
                     },
+                    stepSize: 1,
                 },
-                ticks: {
-                    source: 'data'
-                }
             }],
             yAxes: [{
                 ticks: {

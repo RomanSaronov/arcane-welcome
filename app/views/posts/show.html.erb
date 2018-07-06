@@ -49,19 +49,13 @@
                 displayFormats: {
                       year: 'YYYY',
                 },
-                min: (new Date()).getFullYear(),
+                min: yearNow,
                 max: yearNow + duration
               },
               ticks: {
                   source: 'data'
               }
             }],
-            yAxes: [{
-                ticks: {
-                    min: 0,
-                    max: final_price
-                }
-            }]
         },
       },
       })

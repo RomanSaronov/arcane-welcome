@@ -19,10 +19,12 @@
   <div class="row  p-4 chart">
     <canvas id="InterestChart"></canvas>
     <%= javascript_tag defer: 'defer' do %>
-      var price = <%= @posts.price %>;
-      var duration = <%= @posts.duration %>;
-      var interest = <%= @posts.interest %>;
+      var price = <%= @posts.price %>
+      var duration = <%= @posts.duration %>
+      var interest = <%= @posts.interest %>
       var rateOfReturn = 1 + (interest / 100);
+      var yearNow = moment();
+      var returnYear = moment().add(duration, 'years');
       let initialYear = (new Date()).getFullYear();
 
       const result = [];

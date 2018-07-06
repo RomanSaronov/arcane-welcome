@@ -29,12 +29,12 @@
       var ctx = document.getElementById("InterestChart").getContext('2d');
       var InterestChart = new Chart(ctx, {
       type: 'line',
-      data: {
-      labels: ['Item 1', 'Item 2', 'Item 3'],
-      datasets: [{
-      data: [price, final_price],
-      backgroundColor: '#333'
-      }],
+        data: {
+            datasets: [{
+                data: [price, final_price],
+                backgroundColor: '#333'
+             }],
+         },
       options: {
         scales: {
             xAxes: [{

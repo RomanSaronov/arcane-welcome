@@ -34,7 +34,7 @@
       type: 'bar',
       data: {
         datasets: [{
-          data: [price, finalPrice],
+          data: [{t: yearNow, y:price}, {t: returnYear, y:finalPrice}],
           label: "Valuation",
           borderWidth: 2,
           borderColor: "#333333",

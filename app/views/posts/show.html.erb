@@ -31,11 +31,11 @@
 
       var ctx = document.getElementById("InterestChart").getContext('2d');
       var InterestChart = new Chart(ctx, {
-      type: 'line',
+      type: 'bar',
       data: {
         datasets: [{
           data: [{t: yearNow, y:price},{t: returnYear, y:finalPrice}],
-          label: "Interest",
+          label: "",
           borderWidth: 2,
           borderColor: "#333333",
           fill: false,

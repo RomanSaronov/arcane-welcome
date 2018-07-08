@@ -1,6 +1,6 @@
-class CreatePosts < ActiveRecord::Migration[5.2]
+class CreateStocks < ActiveRecord::Migration[5.2]
   def change
-    create_table :posts do |t|
+    create_table :stocks do |t|
       t.string :name, null: false, default: ""
       t.decimal :price, null: false, default: 0
       t.decimal :interest, null: false, default: 0

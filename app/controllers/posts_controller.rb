@@ -1,8 +1,12 @@
 class PostsController < ApplicationController
+
   def create
     @posts = Post.new(post_params)
+
     if @posts.save
       redirect_to root_path
+    else
+      render :new
     end
   end
 

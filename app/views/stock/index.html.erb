@@ -25,7 +25,7 @@
                     </div>
                     <div class="col-4 text-right">
                       <div class="btn btn-secondary">
-                        <%= link_to "Delete", stock, method: :delete , :data => {:confirm => "Are You Sure?"}, :class => "btn remove-btn" %>
+                        <%= link_to "Destroy", @stock, method: :delete , :data => {:confirm => "Are You Sure?"}, :class => "btn remove-btn" %>
                       </div>
                       <div class="btn btn-primary">
                         <%= link_to "Show", stock, :class => "btn details-btn" %>

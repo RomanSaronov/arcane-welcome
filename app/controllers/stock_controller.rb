@@ -1,16 +1,16 @@
 class StockController < ApplicationController
   def index
-    @stocks = Stock.all
+    @stock = Stock.all
   end
 
   def new
-    @stocks = Stock.new
+    @stock = Stock.new
   end
 
   def create
-    @stocks = Stock.new(stock_params)
+    @stock = Stock.new(stock_params)
 
-    if @stocks.save
+    if @stock.save
       redirect_to root_path
     else
       render :new
@@ -18,11 +18,11 @@ class StockController < ApplicationController
   end
 
   def show
-    @stocks = Stock.find(params[:id])
+    @stock = Stock.find(params[:id])
   end
 
   def destroy
-    @stocks.destroy
+    @stock.destroy
   end
 
   private

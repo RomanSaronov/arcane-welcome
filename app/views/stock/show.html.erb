@@ -8,20 +8,20 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1><%= @stocks.name %></h1>
+        <h1><%= @stock.name %></h1>
       </div>
     </div>
     <div class="row bg-light p-4 text-center">
-        <div class="col"><h5>Unit price: <%= @stocks.price %>$</h5></div>
-        <div class="col"><h5>Duration: <%= @stocks.duration %> years</h5></div>
-        <div class="col"><h5>Interest: <%= @stocks.interest %>%</h5></div>
+        <div class="col"><h5>Unit price: <%= @stock.price %>$</h5></div>
+        <div class="col"><h5>Duration: <%= @stock.duration %> years</h5></div>
+        <div class="col"><h5>Interest: <%= @stock.interest %>%</h5></div>
     </div>
     <div class="row p-4 mb-4 chart">
       <canvas id="InterestChart"></canvas>
       <%= javascript_tag defer: 'defer' do %>
-        const price = <%= @stocks.price %>
-        const duration = <%= @stocks.duration %>
-        const interest = <%= @stocks.interest %>
+        const price = <%= @stock.price %>
+        const duration = <%= @stock.duration %>
+        const interest = <%= @stock.interest %>
         const rateOfReturn = 1 + (interest / 100);
         const yearNow = moment();
         const returnYear = moment().add(duration, 'years');

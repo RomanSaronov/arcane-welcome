@@ -6,15 +6,3 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-def seed_posts
-    5.times do
-      Post.create(
-          name: "Cool Stock",
-          price: 10,
-          duration: 15,
-          interest: 5
-      )
-    end
-end
-
-seed_posts

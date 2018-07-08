@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2018_06_29_140053) do
     t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
-  create_table "stocks", force: :cascade do |t|
+  create_table "stock", force: :cascade do |t|
     t.string "name"
     t.decimal "price"
     t.decimal "interest"

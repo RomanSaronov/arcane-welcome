@@ -22,7 +22,7 @@ class StockController < ApplicationController
   end
 
   def destroy
-
+    @stocks.destroy
   end
 
   private

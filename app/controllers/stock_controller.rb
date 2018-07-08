@@ -21,13 +21,6 @@ class StockController < ApplicationController
     @stock = Stock.find(params[:id])
   end
 
-  def destroy
-    @stock = Stock.find(params[:id])
-    @stock.destroy
-
-    redirect_to root_path
-  end
-
   private
   def stock_params
     params.require(:stock).permit(:name, :price, :duration, :interest)

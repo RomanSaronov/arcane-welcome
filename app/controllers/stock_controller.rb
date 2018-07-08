@@ -3,6 +3,10 @@ class StockController < ApplicationController
     @stocks = Stock.all
   end
 
+  def new
+    @stocks = Stock.new
+  end
+
   def create
     @stocks = Stock.new(stock_params)
 
@@ -15,6 +19,10 @@ class StockController < ApplicationController
 
   def show
     @stocks = Stock.find(params[:id])
+  end
+
+  def destroy
+
   end
 
   private

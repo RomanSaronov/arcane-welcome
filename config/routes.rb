@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root to: 'stock#index'
   get '/stock', to: 'stock#index'
 
-  resources :StockController
+  resources :stock
 end

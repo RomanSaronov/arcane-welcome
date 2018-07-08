@@ -3,7 +3,7 @@
   <%= link_to "Stock", root_path, :class => "my-0 mr-md-auto font-weight-normal"%>
   <% if user_signed_in? %>
     <nav class="my-2 my-md-0 mr-md-3">
-      <a class="p-2 text-dark" href="stock/new/">Add Stock</a>
+      <%= link_to "Add Stock", new_stock_path, :class => "p-2 text-dark"%>
     </nav>
     <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
   <% else # user not signed it %>

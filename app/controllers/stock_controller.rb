@@ -22,7 +22,10 @@ class StockController < ApplicationController
   end
 
   def destroy
+    @stock = Stock.find(params[:id])
     @stock.destroy
+
+    redirect_to root_path
   end
 
   private

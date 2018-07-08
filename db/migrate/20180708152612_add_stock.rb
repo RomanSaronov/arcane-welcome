@@ -7,7 +7,6 @@ class AddStock < ActiveRecord::Migration[5.2]
       t.integer :duration, null: false, default: 0
       t.belongs_to :user, index: true
       t.timestamps
-      t.references :user
     end
   end
 end

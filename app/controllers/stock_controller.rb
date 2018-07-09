@@ -11,9 +11,11 @@ class StockController < ApplicationController
     @stock = Stock.new(stock_params)
     @stock.user = current_user
     if @stock.save
-      redirect_to root_path
+      redirect_to root_path,
+                  flash[:success] = 'Stock added successfully'
     else
-      render :new
+      render :new,
+             flash[:error] = 'Please check the form, something wrong'
     end
   end
 
@@ -22,7 +24,7 @@ class StockController < ApplicationController
 
     if @stock.user != current_user
       redirect_to root_path,
-                  flash[:success] = 'Sorry, but you are only allowed to view
+                  flash[:error] = 'Sorry, but you are only allowed to view
       your own stocks page'
     end
   end

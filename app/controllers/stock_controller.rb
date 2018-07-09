@@ -11,11 +11,11 @@ class StockController < ApplicationController
     @stock = Stock.new(stock_params)
     @stock.user = current_user
     if @stock.save
-      redirect_to root_path,
-                  flash[:success] = 'Stock added successfully'
+      flash[:success] = 'Stock added successfully'
+      redirect_to root_path
     else
-      render :new,
-             flash[:error] = 'Please check the form, something wrong'
+      flash[:error] = 'Please check the form, something wrong'
+      render :new
     end
   end
 

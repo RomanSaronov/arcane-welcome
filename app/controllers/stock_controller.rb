@@ -22,8 +22,6 @@ class StockController < ApplicationController
 
     if @stock.user != current_user
       raise ApplicationController::NotAuthorized
-    else
-      @stock = stock
     end
   end
 

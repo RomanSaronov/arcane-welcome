@@ -1,6 +1,6 @@
 class StockController < ApplicationController
   def index
-    @stock = Stock.all
+    @stock = Stock.where(user: current_user).all
   end
 
   def new

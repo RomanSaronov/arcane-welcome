@@ -9,12 +9,12 @@ class StockController < ApplicationController
 
   def create
     @stock = Stock.new(stock_params)
-
-    # if @stock.save
-    #   redirect_to root_path
-    # else
-    #   render :new
-    # end
+    @stock.user = current_user
+    if @stock.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
   def show

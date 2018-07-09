@@ -30,3 +30,6 @@
 
 # Idea
 .idea
+
+# Rubocop config
+.rubocop.yml

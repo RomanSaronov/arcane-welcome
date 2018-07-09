@@ -14,7 +14,7 @@
           <% if user_signed_in? %>
             <% if @stock.blank? %>
               <h5 class="mb-2 text-muted font-weight-light">No stocks available. Please add stock</h5>
-              <a role="button" class="btn btn-primary" href="stock/new/">+ Add Stock</a>
+              <%= link_to "Add Stock", new_stock_path, :class => "btn btn-primary"%>
             <% else %>
               <% @stock.each do |stock| %>
                 <div class="card mb-2">

@@ -21,11 +21,12 @@ class StockController < ApplicationController
     @stock = Stock.find(params[:id])
 
     if @stock.user != current_user
-      raise ApplicationController::NotAuthorized
+      redirect_to root_path
     end
   end
 
   private
+
   def stock_params
     params.require(:stock).permit(:name, :price, :duration, :interest)
   end

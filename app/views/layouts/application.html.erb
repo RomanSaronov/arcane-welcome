@@ -10,7 +10,9 @@
     <%= render 'layouts/navigation' %>
     <div class="row">
       <div class="col">
-        <div class="alert alert-success"><%= alert %></div>
+        <% flash.each do |key, value| %>
+          <div class="alert alert-<%= key %>"><%= value %></div>
+        <% end %>
       </div>
     </div>
     <%= yield %>

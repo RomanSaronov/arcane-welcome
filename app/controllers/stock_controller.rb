@@ -21,7 +21,7 @@ class StockController < ApplicationController
     @stock = Stock.find(params[:id])
 
     if @stock.user != current_user
-      redirect_to root_path
+      redirect_to root_path, notice: "Sorry, but you are only allowed to view your own stocks."
     end
   end
 

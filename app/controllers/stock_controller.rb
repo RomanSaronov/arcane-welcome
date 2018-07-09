@@ -21,8 +21,8 @@ class StockController < ApplicationController
     @stock = Stock.find(params[:id])
 
     if @stock.user != current_user
-      redirect_to root_path
-      flash.now[:error] = "Sorry, but you are only allowed to view your own stocks page"
+      redirect_to root_path,
+      :alert => 'Sorry, but you are only allowed to view your own stocks page'
     end
   end
 

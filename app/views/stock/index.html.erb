@@ -14,7 +14,9 @@
           <% if user_signed_in? %>
             <% if @stock.blank? %>
               <h5 class="mb-2 text-muted font-weight-light">No stocks available. Please add stock</h5>
-              <%= link_to "Add Stock", new_stock_path, :class => "btn btn-primary"%>
+              <%= link_to "Add Stock",
+                          new_stock_path,
+                          :class => "btn btn-primary"%>
             <% else %>
               <% @stock.each do |stock| %>
                 <div class="card mb-2">
@@ -25,7 +27,9 @@
                     </div>
                     <div class="col-4 text-right">
                       <div class="btn btn-primary">
-                        <%= link_to "Show", stock, :class => "btn details-btn" %>
+                        <%= link_to "Show",
+                                    stock,
+                                    :class => "btn details-btn" %>
                       </div>
                     </div>
                   </div>

@@ -7,7 +7,9 @@
   <div class="col-12 text-center">
     <% if user_signed_in? %>
       <% if @stock.blank? %>
-        <h5 class="mb-2 text-muted font-weight-light">No stocks available. Please add stock</h5>
+        <h5 class="mb-2 text-muted font-weight-light">
+          No stocks available. Please add stock
+        </h5>
         <%= link_to "Add Stock",
                     new_stock_path,
                     :class => "btn btn-primary"%>
@@ -28,11 +30,12 @@
               </div>
             </div>
           </div>
+        <% end %>
       <% end %>
-    <% end %>
-
     <% else # user not signed it %>
-      <h5 class="mb-2 text-muted font-weight-light">Login or register for stock operations</h5>
+      <h5 class="mb-2 text-muted font-weight-light">
+        Login or register for stock operations
+      </h5>
     <% end # if user is signed it %>
   </div>
 </div>

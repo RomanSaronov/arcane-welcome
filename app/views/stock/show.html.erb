@@ -4,9 +4,15 @@
   </div>
 </div>
 <div class="row bg-light p-4 text-center">
-    <div class="col"><h5>Unit price: <%= @stock.price %>$</h5></div>
-    <div class="col"><h5>Duration: <%= @stock.duration %> years</h5></div>
-    <div class="col"><h5>Interest: <%= @stock.interest %>%</h5></div>
+    <div class="col">
+      <h5>Unit price: <%= @stock.price %>$</h5>
+    </div>
+    <div class="col">
+      <h5>Duration: <%= @stock.duration %> years</h5>
+    </div>
+    <div class="col">
+      <h5>Interest: <%= @stock.interest %>%</h5>
+    </div>
 </div>
 <div class="row p-4 mb-4 chart">
   <canvas id="InterestChart"></canvas>

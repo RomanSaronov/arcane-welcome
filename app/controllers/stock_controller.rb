@@ -9,6 +9,7 @@ class StockController < ApplicationController
 
   def create
     @stock = Stock.new(stock_params)
+    @stock.user = current_user
     if @stock.save
       flash[:success] = 'Stock added successfully'
       redirect_to root_path

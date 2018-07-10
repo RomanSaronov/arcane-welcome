@@ -1,0 +1,23 @@
+version: '3.6'
+
+volumes:
+  dbdata:
+
+services:
+  web:
+    build: .
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: puma
+    ports:
+      - 3000:3000
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgresql://postgres:mystrongpassword@db
+      SECRET_KEY_BASE: 94dca93cbb9cfe6d4ea02765a7b0e28b9de8f6d3e9bca62ece5bc9f580659001200fd6a38856d329a8821affdc885230ac2330c14c3342f330974d3fc913cbac
+  db:
+    image: postgres:10.3-alpine
+    volumes:
+      - dbdata:/var/lib/postgresql/data

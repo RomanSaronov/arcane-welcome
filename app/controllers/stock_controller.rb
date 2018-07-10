@@ -14,7 +14,6 @@ class StockController < ApplicationController
       flash[:success] = 'Stock added successfully'
       redirect_to root_path
     else
-      flash[:error] = 'Please check the form, something wrong'
       render :new
     end
   end

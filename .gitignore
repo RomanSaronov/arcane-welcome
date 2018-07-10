@@ -32,4 +32,4 @@
 .idea
 
 # Rubocop config
-.rubocop.yml
+.rubocop.yml.idea

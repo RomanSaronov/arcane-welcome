@@ -2,8 +2,7 @@ class Stock < ApplicationRecord
   belongs_to :user
 
   validates :name,
-            presence: true,
-            message: "Name can't be blank"
+            presence: true
   validates :price,
             :duration,
             :interest,

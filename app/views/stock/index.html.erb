@@ -1,50 +1,41 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 pl-0 pr-0">
-          <h1>Stock productivity calculator</h1>
-        </div>
-      </div>
-      <div class="row bg-light pt-4 pb-4 mb-4">
-        <div class="col-12 text-center">
-          <% if user_signed_in? %>
-            <% if @stock.blank? %>
-              <h5 class="mb-2 text-muted font-weight-light">No stocks available. Please add stock</h5>
-              <%= link_to "Add Stock",
-                          new_stock_path,
-                          :class => "btn btn-primary"%>
-            <% else %>
-              <% @stock.each do |stock| %>
-                <div class="card mb-2">
-                  <div class="card-body row text-left">
-                    <div class="col-8">
-                      <i class="fas fa-chart-line fa-lg"></i>
-                      <h5 class="font-weight-light"><%= stock.name %></h5>
-                    </div>
-                    <div class="col-4 text-right">
-                      <div class="btn btn-primary">
-                        <%= link_to "Show",
-                                    stock,
-                                    :class => "btn details-btn" %>
-                      </div>
-                    </div>
-                  </div>
+<div class="row">
+  <div class="col-12 pl-0 pr-0">
+    <h1>Stock productivity calculator</h1>
+  </div>
+</div>
+<div class="row bg-light pt-4 pb-4 mb-4">
+  <div class="col-12 text-center">
+    <% if user_signed_in? %>
+      <% if @stock.blank? %>
+        <h5 class="mb-2 text-muted font-weight-light">No stocks available. Please add stock</h5>
+        <%= link_to "Add Stock",
+                    new_stock_path,
+                    :class => "btn btn-primary"%>
+      <% else %>
+        <% @stock.each do |stock| %>
+          <div class="card mb-2">
+            <div class="card-body row text-left">
+              <div class="col-8">
+                <i class="fas fa-chart-line fa-lg"></i>
+                <h5 class="font-weight-light"><%= stock.name %></h5>
+              </div>
+              <div class="col-4 text-right">
+                <div class="btn btn-primary">
+                  <%= link_to "Show",
+                              stock,
+                              :class => "btn details-btn" %>
                 </div>
-            <% end %>
-          <% end %>
+              </div>
+            </div>
+          </div>
+      <% end %>
+    <% end %>
 
-          <% else # user not signed it %>
-            <h5 class="mb-2 text-muted font-weight-light">Login or register for stock operations</h5>
-          <% end # if user is signed it %>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+    <% else # user not signed it %>
+      <h5 class="mb-2 text-muted font-weight-light">Login or register for stock operations</h5>
+    <% end # if user is signed it %>
+  </div>
+</div>
 
 <style>
   .card {

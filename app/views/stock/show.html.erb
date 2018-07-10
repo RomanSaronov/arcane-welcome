@@ -1,75 +1,66 @@
-<!DOCTYPE html>
-<html>
-<head>
+<div class="row">
+  <div class="col-12">
+    <h1><%= @stock.name %></h1>
+  </div>
+</div>
+<div class="row bg-light p-4 text-center">
+    <div class="col"><h5>Unit price: <%= @stock.price %>$</h5></div>
+    <div class="col"><h5>Duration: <%= @stock.duration %> years</h5></div>
+    <div class="col"><h5>Interest: <%= @stock.interest %>%</h5></div>
+</div>
+<div class="row p-4 mb-4 chart">
+  <canvas id="InterestChart"></canvas>
   <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"%>
   <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"%>
-</head>
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h1><%= @stock.name %></h1>
-      </div>
-    </div>
-    <div class="row bg-light p-4 text-center">
-        <div class="col"><h5>Unit price: <%= @stock.price %>$</h5></div>
-        <div class="col"><h5>Duration: <%= @stock.duration %> years</h5></div>
-        <div class="col"><h5>Interest: <%= @stock.interest %>%</h5></div>
-    </div>
-    <div class="row p-4 mb-4 chart">
-      <canvas id="InterestChart"></canvas>
-      <%= javascript_tag defer: 'defer' do %>
-        const price = <%= @stock.price %>
-        const duration = <%= @stock.duration %>
-        const interest = <%= @stock.interest %>
-        const rateOfReturn = 1 + (interest / 100);
-        const yearNow = moment();
-        const returnYear = moment().add(duration, 'years');
+  <%= javascript_tag defer: 'defer' do %>
+    const price = <%= @stock.price %>
+    const duration = <%= @stock.duration %>
+    const interest = <%= @stock.interest %>
+    const rateOfReturn = 1 + (interest / 100);
+    const yearNow = moment();
+    const returnYear = moment().add(duration, 'years');
 
-        let initialYear = (new Date()).getFullYear();
-        const result = [];
+    let initialYear = (new Date()).getFullYear();
+    const result = [];
 
-        for (let i = 1; i <= duration; ++i) {
-          result.push({
-            t: moment().year(initialYear),
-            y: price * Math.pow(rateOfReturn, i)
-          });
-          ++initialYear
-        }
+    for (let i = 1; i <= duration; ++i) {
+      result.push({
+        t: moment().year(initialYear),
+        y: price * Math.pow(rateOfReturn, i)
+      });
+      ++initialYear
+    }
 
-        const ctx = document.getElementById("InterestChart").getContext('2d');
-        const InterestChart = new Chart(ctx, {
-          type: 'bar',
-          data: {
-            datasets: [{
-              data: result,
-              label: "Valuation",
-              borderWidth: 1,
-              borderColor: "#333333",
-              backgroundColor: "#f8f9fa"
-            }]
-          },
-          options: {
-            scales: {
-              xAxes: [{
-                type: 'time',
-                time: {
-                  unit: 'year',
-                  displayFormats: {
-                        year: 'YYYY',
-                  },
-                  min: yearNow,
-                  max: returnYear
-                },
-              }],
+    const ctx = document.getElementById("InterestChart").getContext('2d');
+    const InterestChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        datasets: [{
+          data: result,
+          label: "Valuation",
+          borderWidth: 1,
+          borderColor: "#333333",
+          backgroundColor: "#f8f9fa"
+        }]
+      },
+      options: {
+        scales: {
+          xAxes: [{
+            type: 'time',
+            time: {
+              unit: 'year',
+              displayFormats: {
+                    year: 'YYYY',
+              },
+              min: yearNow,
+              max: returnYear
             },
-          },
-        })
-      <% end -%>
-    </div>
-  </div>
-</body>
-</html>
+          }],
+        },
+      },
+    })
+  <% end -%>
+</div>
 
 <style>
   .chart {

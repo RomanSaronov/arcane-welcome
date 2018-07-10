@@ -3,8 +3,12 @@ class Stock < ApplicationRecord
 
   validates :name,
             presence: true
+  validates :duration,
+            presence: true,
+            numericality: {
+              greater_than_or_equal_to: 1
+            }
   validates :price,
-            :duration,
             :interest,
             presence: true,
             numericality: {
